@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+p,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+:root {
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main_con {
+  display: flex;
+  max-width: 1000px;
+  height: 500px;
+  /* border: 3px solid red; */
+  margin: 100px auto;
+}
+
+/* media Query from screen 500px to 0px */
+@media (max-width: 500px) {
+  .main_con {
+    flex-direction: column;
+    border-radius: 0;
+  }
+}
+
+/* ============================================================ */
+.main_con .sedan {
+  max-width: 333px;
+  padding: 40px;
+  background-color: var(--Bright-orange);
+  /* padding: 30px 30px; */
+}
+
+/* media Query from screen 500px to 0px */
+@media (max-width: 500px) {
+  .main_con {
+    flex-direction: column;
+    border-radius: 0;
+    max-width: 330px;
+  }
+}
+
+/* ======================================= */
+.sedan p {
+  padding-right: 45px;
+}
+
+/* *media Query from  .main_con.sedan 500px to 0px */
+@media (max-width: 500px) {
+  .sedan p {
+    /* padding-right: 130px; */
+  }
+
+  .sedan div {
+    margin-top: 30px;
+  }
+}
+
+/* ============================== */
+
+.main_con .suv {
+  max-width: 333px;
+  padding: 40px;
+  background-color: var(--Dark-cyan);
+}
+
+.suv p {
+  padding-right: 45px;
+}
+
+.main_con .luxury {
+  max-width: 333px;
+  padding: 40px;
+  background-color: var(--Very-dark-cyan);
+}
+
+.luxury p {
+  padding-right: 45px;
+}
+
+h2 {
+  color: white;
+  font-size: 38px;
+  margin: 30px 0;
+  width: 20px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.607);
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+button {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+}
+
+.sedan div {
+  margin-top: 100px;
+}
+
+.suv div {
+  margin-top: 100px;
+}
+
+.luxury div {
+  margin-top: 100px;
+}
+
+.sedan button {
+  color: var(--Bright-orange);
+}
+
+.suv button {
+  color: var(--Dark-cyan);
+}
+
+.luxury button {
+  color: var(--Very-dark-cyan);
+}
